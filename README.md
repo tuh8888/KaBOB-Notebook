@@ -1,0 +1,1 @@
+This is a notebook containing information and tools for exploring the content in the Knowledge Base of Biomedicine (KaBOB)
