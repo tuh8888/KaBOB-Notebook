@@ -1,6 +1,7 @@
 from ipywidgets import interactive
 import ipywidgets as widgets
 from IPython.display import Image, Markdown
+from IPython.display import display
 import os
 
 
@@ -14,10 +15,8 @@ def display_markdown(md_file):
     display(Markdown(md_dir + md_file + ".md"))
 
 def display_image(img_file, scale):
-    display(Image(img_dir + img_file + '.png', 
-    	height=512*scale, 
-    	width=512*scale, 
-    	unconfined=True))
+    img = Image(img_dir + img_file + '.png', height=512*scale, width=512*scale, unconfined=True)
+    display(img)
 
     
 
